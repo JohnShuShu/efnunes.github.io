@@ -1,0 +1,277 @@
+\documentclass[margin,line]{res}
+
+\usepackage{enumitem}
+\usepackage[colorlinks = true,
+linkcolor = blue,
+urlcolor  = blue,
+citecolor = blue,
+anchorcolor = blue]{hyperref}
+\oddsidemargin -.5in
+\evensidemargin -.5in
+\textwidth=6.0in
+\itemsep=0in
+\parsep=0in
+% if using pdflatex:
+%\setlength{\pdfpagewidth}{\paperwidth}
+%\setlength{\pdfpageheight}{\paperheight} 
+
+\newenvironment{list1}{
+  \begin{list}{\ding{113}}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in} 
+      \setlength{\leftmargin}{0.17in}}}{\end{list}}
+\newenvironment{list2}{
+  \begin{list}{$\bullet$}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in} 
+      \setlength{\leftmargin}{0.2in}}}{\end{list}}
+
+
+\begin{document}
+
+\name{Eric Nunes \vspace*{.1in}}
+
+\begin{resume}
+\section{\sc Contact Information}
+\vspace{.05in}
+\begin{tabular}{@{}p{2in}p{4in}}
+699 S. Mill Avenue            & {\it Voice:}  (315) 439-3089\\                    
+Arizona State University & {\it E-mail:}  \href{mailto:enunes1@asu.edu}{enunes1@asu.edu}\\       
+Tempe, AZ  85281 USA  & {\it website:} \href{https://efnunes.github.io/}{efnunes.github.io} \\     
+\end{tabular}
+
+
+%\section{\sc Research Interests}
+%Artificial Intelligence, Machine learning and statistical methods for large datasets, data-driven cyber security, security informatics.
+
+\section{\sc Education}
+\href{http://www.asu.edu/}{\bf Arizona State University}, Tempe, Arizona USA\\
+%{\em Department of Statistics} 
+\vspace*{-.1in}
+\begin{list1}
+\item[] Ph.D. Computer Engineering (GPA: 4.0/4.0), August 2014 - Present
+\begin{list2}
+\vspace*{.05in}
+\item Dissertation Topic:  ``Reasoning about Cyber Threat Actors'' 
+%\item Dissertation Topic:  ``Hierarchical Models for Multiple Ratings
+%  in Performance-Based\\ \hspace*{1.23in} Student Assessments.'' 
+\item Advisor:  Paulo Shakarian
+\end{list2}
+\end{list1}
+
+\href{http://www.syr.edu/}{\bf Syracuse University}, Syracuse, New York USA\\
+%{\em Department of Mathematics and Statistics} 
+\vspace*{-.1in}
+\begin{list1}
+\item[] M.S. Electrical Engineering,  May 2012
+\end{list1}
+
+\href{http://archive.mu.ac.in/}{\bf University of Mumbai}, Mumbai, India\\
+%{\em Department of Mathematics and Statistics} 
+\vspace*{-.1in}
+\begin{list1}
+\item[] B.S. Electronics and Telecommunication,  June 2010
+\end{list1}
+
+
+\section{\sc Honors and Awards} 
+\begin{itemize}[leftmargin =*]
+
+\item IEEE/ACM International Symposium on Foundations of Open Source Intelligence and Security Informatics (FOSINT-SI), 2016 \textbf{Best Paper Award} for ``Argumentation Models for Cyber Attribution". 
+
+\item ``Systems and Methods for Data Driven Malware Task Identification"-- Selected for TechConnect
+2016 Innovation Showcase.
+
+\item Business Category - Most commercial potential winner (Idea: Weight Estimation from Anthropometric features), Medical Center of The Americas Foundation, 2014 (\$1000).
+
+\item Graduate Scholarship to pursue M.S. at Syracuse University (2010 - 2012)
+\end{itemize}
+\section{\sc Academic Experience}
+{\bf Arizona State University}, Tempe, Arizona USA\\
+{\bf Graduate Research Assistant \href{http://cysis.engineering.asu.edu/}{(CySIS Lab)}} \hfill {\bf August, 2014 - present}\\
+\textit{\underline{Tools:} Python, PostgreSQL, Prolog, tcpflow.}\\
+\begin{enumerate}
+	\item {\bf{Proactive Cyber-threat Intelligence}} 
+	\begin{itemize}
+		\item Developed an operational system for cyber threat intelligence gathering from darknet and deepnet sites. 
+		
+		\item The system employs data mining and machine learning techniques to collect information from hacker forum discussions and marketplaces offering products and services focusing on malicious hacking. 
+		
+		\item Currently, this system collects on average 305 high-quality cyber threat warnings each week. These threat warnings include information on newly developed malware and exploits. 
+		
+		\item Future direction is to develop data analysis tools to gather meaningful insights from this data to aid security experts for better threat analysis. 
+		
+		\item {\em Relevant publications:} [B-1, J-1, C-7]
+	\end{itemize}
+	
+	
+	\item {\bf{Reasoning framework for Cyber-attribution}} 
+	\begin{itemize}
+		\item Proposed a knowledge representation - machine learning (KR-ML) framework to reason about threat actors. 
+		
+		\item The framework combines an argumentation model based on DeLP (Defeasible Logic Programming) and machine learning classifiers to evaluate evidence and reason about actors responsible for an attack.
+		
+		\item The framework was evaluated by building a dataset from the capture-the-flag event held at DEFCON -- 10 million network attacks. 
+		
+		\item Achieved higher precision than previously reported approaches (evaluated on the same dataset) that rely on machine learning classifiers alone---a jump from 37\% to 64.5\%.
+		
+		\item {\em Relevant publications:} [J-3, C-3, C-5, C-6, BC-1]
+		
+	\end{itemize}
+	
+	
+	\item {\bf{Malware task identification}} 
+	\begin{itemize}
+		\item Developed a novel cognitive learning model to identify tasks (e.g. logging keystrokes, recording video, establishing remote access, etc.) that the malware was designed to perform. 
+		\item The proposed model was tested on different malware collections - including mutated and encrypted malware samples. 
+		\item The model outperformed standard machine learning approaches in identifying the tasks.
+		\item {\em Relevant publications:} [J-2, C-1, C-2, C-4]
+	\end{itemize}
+	
+
+\end{enumerate}
+
+{\bf Dartmouth College}, Hanover, New Hampshire USA\\
+{\bf Research Associate \href{https://www.dartmouth.edu/~rhg/}{(Brain Engineering Lab)}} \hfill {\bf June, 2012 - July, 2014}\\
+\textit{\underline{Tools:} MATLAB, C++, OpenCV.}
+\begin{itemize}
+	\item Learning representations for Object recognition and localization from image and video datasets using biologically inspired algorithms.
+	\item Proposed a supervised object recognition algorithm that achieves corresponding classification rates in comparison with standard machine learning approaches - at a fraction of the time and space costs.
+\end{itemize}
+ 
+
+{\bf SUNY Upstate Medical University}, Syracuse, New York USA\\
+{\bf Research Assistant} \hfill {\bf May, 2011 - June, 2012}\\
+\textit{\underline{Tools:} MATLAB, C++.}\\
+Registering Multi-Spectral Retinal images to find features and points of interest to estimate the abundance of Oxygen saturation in the blood vessels in retinal images to diagnose retinal disorders.
+
+\section{\sc Patents}
+\begin{itemize}[leftmargin =*]
+
+\item ``Systems and Methods for Data Driven Malware Task Identification." \\U.S. Provisional Patent: 62/182,006, Submitted (Non-provisional), 2016. 
+
+\item ``Intelligent darkweb crawling infrastructure for cyber threat intelligence collection."\\U.S. Provisional Patent: 62/409,291, Licensed by CYR3CON, 2016.
+\end{itemize}
+
+
+\section{\sc Publications}
+{\bf *B} - {\em Book}, {\bf*J} - {\em Journal}, {\bf *C} - {\em Conference}, {\bf*BC} - {\em Book Chapter}\\
+
+\begin{itemize}[leftmargin =*]
+\item {[\bf B-1]} J. Robertson, A. Diab, E. Marin, {\bf E. Nunes}, J. Shakarian, P. Shakarian ``Darkweb Cyber Threat Intelligence Mining", Cambridge University Press (In Press), 2016. 
+
+\item {[\bf J-3]} {\bf E. Nunes}, P. Shakarian, G. Simari, A. Ruef ``Hybrid Structured Argumentation Models for Cyber Attribution: An Empirical Study on Identifying Threat Actors" {\em submitted (under review)}, 2016.
+
+\item {[\bf J-2]} {\bf E. Nunes}, C. Buto, P. Shakarian, C. Lebiere, S. Bennati, R. Thomson ``Cognitively-Inspired Inference for Malware Task Identification" {\em submitted (under review)}, 2016.
+
+\item {[\bf J-1]} J. Robertson, A. Diab, E. Marin, {\bf E. Nunes}, V. Paliath, J. Shakarian, P. Shakarian ``Darknet Mining and Game Theory for Enhanced Cyber Threat Intelligence" The Cyber Defense Review, 2016.
+
+\item {[\bf C-7]} {\bf E. Nunes}, A. Diab, Andrew Gunn, E. Marin, V. Mishra, V. Paliath, J. Robertson, J. Shakarian, A. Thart, P. Shakarian ``Darknet and Deepnet Mining for Proactive Cybersecurity Threat Intelligence" IEEE Conference on Intelligence and Security Informatics (ISI), 2016
+
+\item {[\bf C-6]} {\bf E. Nunes}, P. Shakarian, G. Simari, A. Ruef `` Argumentation Models for Cyber Attribution"
+IEEE/ACM International Symposium on Foundations of Open Source Intelligence and Security Informatics (FOSINT-SI), 2016 -- {\bf Best Paper Award}.
+
+\item {[\bf C-5]} {\bf E. Nunes}, P. Shakarian, G. Simari ``Toward Argumentation-Based Cyber Attribution"
+AAAI Workshop on Artificial Intelligence and Cyber security (AICS), 2016.
+
+\item {[\bf BC-1]} {\bf E. Nunes}, N. Kulkarni, P. Shakarian, A Ruef, J. Little ``Cyber-Deception and Attribution in Capture-the-Flag Exercises" (extended version) in Cyber Deception: Building the Scientific Foundation (editors: S. Jajodia, V.S. Subrahmanian, V. Swarup, C. Wang) Springer, 2016.
+
+\item {[\bf C-4]} {\bf E. Nunes}, C. Buto, P. Shakarian, C. Lebiere, S. Bennati, R. Thomson, H. Jaenisch ``Malware Task Identification: A Data Driven Approach"  IEEE/ACM International Symposium on Foundations of Open Source Intelligence and Security Informatics (FOSINT-SI), 2015.
+
+\item {[\bf C-3]} {\bf E. Nunes},  N. Kulkarni, P. Shakarian, A Ruef, J. Little ``Cyber-Deception and Attribution in Capture-the-Flag Exercises"  IEEE/ACM International Symposium on Foundations of Open Source Intelligence and Security Informatics (FOSINT-SI), 2015.
+
+\item {[\bf C-2]} C. Lebiere, S. Bennati, R. Thomson, P. Shakarian, {\bf E. Nunes}  ``Functional Cognitive Models of Malware Identification" 13th International Conference on Cognitive Modeling (ICCM), 2015.
+
+\item {[\bf C-1]} R. Thomson, C. Lebiere, S. Bennati, P. Shakarian, {\bf E. Nunes}   ``Malware Identification Using Cognitively-Inspired Inference" 24th Conference on Behavior Representation in Modeling and Simulation (BRiMS), 2015.
+   
+\end{itemize}
+
+\section{\sc Invited talks}
+\begin{itemize}[leftmargin =*]
+
+\item {\bf Cyber-Deception and Attribution in Capture-the-Flag Exercises}\\
+The International Information System Security Certification Consortium (ISC2), Phoenix chapter, October, 2016.\\
+Army Research Office's Cyber Deception Workshop, Washington, July 2015.
+
+\item {\bf Automatic identification of malware tasks}\\
+Cactus-Con, Tempe, Arizona, March, 2015.
+\end{itemize}
+
+
+\section{\sc Professional Experience}
+{\bf Data Scientist}, \href{http://www.cyr3con.com/}{Cyber Reconnaissance Inc. (CYR3CON)}  \hfill {\bf August, 2016 - present}
+\begin{itemize}
+	 \item Developing data analysis tools for threat intelligence to draw meaningful insights from data mined from darknet and deepnet markets /forums (including detection of 0-day exploits, identifying exploits targeting specific vulnerabilities, trend analytics in cyber threat landscape etc.) for customer specific requirements.
+	 
+	 \item Consulting for SiteLock Inc. to further improve the malicious web script detection model and make it more robust and less susceptible to false alarms.  
+\end{itemize}
+
+{\bf Research Consultant}, \href{http://www.cyr3con.com/}{CYR3CON} (Client: \href{https://www.sitelock.com/}{SiteLock})  \hfill {\bf June 2016 - August 2016}
+\begin{itemize}
+	\item Analyzed large dataset of malicious web scripts (PHP/HTML) to generate features indicative of malicious activity.
+	\item Developed classification models to classify web scripts as malicious or not using the generated features in Python.
+	\item Visualized the performance of the trained model overtime and analyzed the classification errors for further improvement through Plotly dashboard.
+	\item {\bf Achieved malicious web script detection rate of $>$90\%.}
+	
+\end{itemize}
+
+\section{\sc Technical Skills} 
+\begin{itemize}[leftmargin =*]
+
+\item {\bf Machine Learning:} Classification, regression, clustering, anomaly detection, feature engineering, online learning, Experience with deep learning.
+
+\item{\bf Programming Languages:} Python, MATLAB, C++, Prolog, HTML, LaTeX. Familiar with C, PHP, LISP, R. 
+
+\item{\bf Libraries:} scikit-learn, Weka, Pandas, OpenCV, Theano, Caffe. 
+
+\item {\bf Databases:} SQL, PostgreSQL, MYSQL, Familiar with Mongo DB.
+
+\item {\bf Operating System:} Windows, Linux, Mac OS X. 
+
+\item {\bf Tools:} Eclipse, MS Visual Studio, PyCharm. 
+
+\item {\bf Big Data and Cloud:} Familiar with Big Data Processing Platforms: Hadoop, Spark and Cloud tools: Amazon S3. 
+
+\end{itemize}
+
+
+\section{\sc Press}
+\begin{itemize}[leftmargin=*]
+\item \href{https://asunow.asu.edu/20160907-solutions-asu-researchers-hacking-hackers-new-approach}{Hacking the hackers}, ASU now: Access, Excellence, Impact. September 7, 2016.
+
+\item \href{https://continuum.cisco.com/2016/08/18/arizona-state-builds-darknet-mining-model-finds-16-zero-days/}{Arizona State Builds Darknet Mining Model, Finds 16 Zero Days}, Cisco Continuum. August 18, 2016.
+
+\item \href{https://www.helpnetsecurity.com/2016/08/10/cyber-threats-underground-markets/}{Over 300 new cyber threats pop up on underground markets each week}, HelpNetSecurity. August 10, 2016.
+
+\item \href{http://www.forbes.com/sites/kevinmurnane/2016/08/08/machine-learning-goes-dark-and-deep-to-find-zero-day-exploits-before-day-zero/#49b6e2706d76}{ Machine Learning Goes Dark And Deep To Find Zero-Day Exploits Before Day Zero}, Forbes. August 8, 2016.
+
+\item \href{https://www.technologyreview.com/s/602115/machine-learning-algorithm-combs-the-darknet-for-zero-day-exploits-and-finds-them/}{ Machine-Learning Algorithm Combs the Darknet for Zero Day Exploits, and Finds Them},
+MIT Tech Review. August 5, 2016. ACM TechNews. August 5, 2016.
+
+\end{itemize}
+
+\section{\sc Service}
+{\bf Journal Reviewer:}
+\begin{itemize}
+	\item Social Network Analysis and Mining (SNAM), 2017.
+	\item Sustainability, 2017. 
+\end{itemize}
+
+{\bf Conference Reviewer:}
+\begin{itemize}
+\item ACM SIGKDD Conferences on Knowledge Discovery and Data Mining (KDD), 2015, 2016.
+\item AAAI Conference on Artificial Intelligence (AAAI), 2016.
+\item International Conference on Autonomous Agents and Multiagent Systems, 2015. 
+\end{itemize}
+
+
+\section{\sc References} Available on request
+
+\end{resume}
+\end{document}
+
+
+
+
